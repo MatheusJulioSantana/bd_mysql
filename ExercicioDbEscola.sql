@@ -12,7 +12,7 @@ dataProva DATE,
 PRIMARY KEY (id)
 );
 
-INSERT INTO tb_alunos (nome, serie, idade,nota, dataProva) 
+INSERT INTO tb_alunos (nome, serie, idade, nota, dataProva) 
 VALUES 
   ("Rodrigo Rodrigues", "8B", 16, 7, "2020-12-15"),
   ("Marcos Souza", "7A", 14, 6, "2020-11-15"),
@@ -23,8 +23,10 @@ VALUES
   ("Ana Silva", "9A", 15, 8, "2021-01-20"),
   ("Claudia Claudires", "8C", 16, "2019-10-12");
 
+--filtros 
 SELECT * FROM tb_alunos WHERE nota > 7;
-
 SELECT * FROM tb_alunos WHERE valor < 500;
 
-SELECT * FROM tb_alunos;
+-- atualizações
+UPDATE tb_alunos SET nota = 7 WHERE Id = 2;
+ALTER TABLE tb_alunos MODIFY nota DECIMAL(6,2);

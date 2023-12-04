@@ -20,10 +20,10 @@ VALUES
   ("Mauro Dias", "trainee", 1500.00, "2023-08-10", "Recursos Humanos"),
   ("Roberta Camargo", "Estagiario", 1700.00, "2022-07-06", "Recursos Humanos");
 
+--filtros
 SELECT * FROM tb_colaboradores WHERE salario > 2000.00;
-
 SELECT * FROM tb_colaboradores WHERE salario < 2000.00;
 
-SELECT * FROM tb_colaboradores;
-
-
+-- atualizações
+UPDATE tb_colaboradores SET salario = 2000 WHERE Id = 4;
+ALTER TABLE tb_colaboradores MODIFY salario DECIMAL(6,2);

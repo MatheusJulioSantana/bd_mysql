@@ -23,9 +23,10 @@ VALUES
   ("Lanterna", "utensilio", "Lanterna portátil para iluminação em ambientes escuros", 70, "2019-04-03"),
   ("Oculos de sol", "vestuario", "Óculos de sol estilosos para proteção contra raios UV", 650, "2019-10-12");
 
-
+--filtros 
 SELECT * FROM tb_produtos WHERE valor > 500;
-
 SELECT * FROM tb_produtos WHERE valor < 500;
 
-SELECT * FROM tb_produtos;
+-- atualizações
+UPDATE tb_produtos SET valor = 250 WHERE Id = 4;
+ALTER TABLE tb_produtos MODIFY valor DECIMAL(6,2);
