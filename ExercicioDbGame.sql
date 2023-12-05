@@ -1,6 +1,4 @@
 CREATE DATABASE db_generation_game_online; --
-
--- Selecionar o Banco de Dados db_quitanda --
 USE db_generation_game_online;
 
 -- Criar a tabela classes
